@@ -7,7 +7,7 @@ phases:
     commands:
       - apt-get update
       - apt-get install -y jq
-      - wget https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+      - wget https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
       - tar xzf apache-maven-3.8.8-bin.tar.gz
       - ln -s apache-maven-3.8.8 maven
       - export SONAR_SCANNER_VERSION=4.7.0.2747
@@ -37,4 +37,5 @@ phases:
 
 artifacts:
   paths:
+
      - '**/*'
